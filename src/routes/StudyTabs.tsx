@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 
 import TeacherList from '../pages/TeacherList';
-import Favorites from '../pages/Favorives';
+import Favorites from '../pages/Favorites';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -35,7 +35,7 @@ function StudyTabs() {
                 activeBackgroundColor: '#ebebf5',
                 inactiveTintColor: '#c1bccc',
                 activeTintColor: '#32264d'
-            }} 
+            }}
         >
             <Screen 
                 name="TeacherList" 
@@ -50,7 +50,7 @@ function StudyTabs() {
                 }} 
             />
             <Screen 
-                name="Favorits" 
+                name="Favorites" 
                 component={Favorites}
                 options={{
                     tabBarLabel: 'Favoritos',
